@@ -1,2 +1,2 @@
-# TAG-BROSSIERCHAMPAGNE-CDOF3
+# TAG-BROSSIER-CDOF3
 decentralization technologies TD1
