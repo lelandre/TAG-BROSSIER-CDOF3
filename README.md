@@ -8,7 +8,7 @@ There is a loop for each hour where you can choose to sleep (skip time but lose 
 When you go to explore, a random event is chosen from the TAG.py file to be your adventure for this hour.
 At the end of an event, time goes up by an hour.
 
-You are free to edit it to fix bugs or contribute by adding new events
+You are free to edit this project to fix bugs or contribute by adding new events
 
 If you want to add a new event:
 go to TAG.py and create a new event function
