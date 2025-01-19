@@ -125,3 +125,36 @@ def event10():
     else:
         print("You decide it's too risky to stay near humans. No food gained.")
         return 0
+
+
+def event11():
+    print("You come across a campfire with a pot of soup cooking. No one seems to be around.")
+    print("Do you take some soup? [yes] [no]")
+    command = input()
+    if command == "yes":
+        from random import randint
+        if randint(1, 2) == 1:
+            print("You enjoy a warm meal! Gain 3 food.")
+            return 3
+        else:
+            print("The owner returns and catches you! Lose 2 food.")
+            return -2
+    else:
+        print("You decide not to take the risk. No food gained.")
+        return 0
+
+def event12():
+    print("You discover an abandoned beehive with some honeycomb left inside.")
+    print("Do you try to gather the honey? [yes] [no]")
+    command = input()
+    if command == "yes":
+        from random import randint
+        if randint(1, 2) == 1:
+            print("You gather the honey safely. Gain 2 food.")
+            return 2
+        else:
+            print("The bees sting you! Lose 1 food.")
+            return -1
+    else:
+        print("You leave the beehive untouched. No food gained.")
+        return 0
