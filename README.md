@@ -1,28 +1,29 @@
-#Welcome to my open source project !
+Welcome to my open source project !
 
 this is a school project done in python in 3 hours using pyCharm
 
 Kobok Adventures is a text-based adventure game where you play as a goblin named Kobok, striving to survive in a human town. Make strategic choices to gather enough food and survive each day. Explore, sleep, or take risks to manage your time and resources wisely.
 
-##Features
+Features
 Dynamic day-night cycle starting at 10 AM and ending at midnight.
 A variety of randomized events with consequences for your food levels.
 Multiple choices at each step that affect the gameplay.
 Simple text-based interface.
-##File Structure
-###main.py:
+
+File Structure
+main.py:
 The main entry point of the game, handles game flow, introduction, and day progression.
 
-###utils.py:
-
+utils.py:
 Contains utility functions for managing the game state (time, food, days).
 Defines the list of randomized events.
 Provides helper functions like exitgame, givetime, and givefood.
 
-###TAG.py:
+TAG.py:
 Defines 12 unique randomized events triggered during exploration.
 Each event affects food levels positively or negatively based on the player's choices.
-How to Play
+
+How to Play:
 Run main.py to start the game.
 Follow the on-screen instructions to make choices:
 Type [kobok] to begin a new game.
@@ -38,7 +39,7 @@ Gain food (e.g., stealing bread, finding berries).
 Lose food (e.g., being caught by humans, drinking poisoned water).
 Choose wisely to maximize survival.
 
-##Game Rules
+Game Rules
 Each game day starts at 10 AM and ends at midnight.
 Manage your time (hours) and food carefully:
 Sleep spends 3 hours and costs 1 food.
@@ -57,7 +58,7 @@ If food is ≥ 3, proceed to the next day.
 If food is < 3, the game ends.
 Game Over: Decide to restart or quit.
 
-##Installation & Execution
+Installation & Execution
 Clone the repository or download the project files.
 Ensure Python 3.6+ is installed.
 
