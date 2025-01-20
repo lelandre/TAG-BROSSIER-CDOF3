@@ -15,7 +15,7 @@ Clone the repository to your local machine:
 bash
 Copier
 Modifier
-git clone https://github.com/your-username/kobok-adventures.git
+git clone https://github.com/lelandre/kobok-adventures.git
 Navigate to the project folder:
 bash
 Copier
