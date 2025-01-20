@@ -1,3 +1,7 @@
+Welcome to my open source project !
+
+this is a school project done in python in 3 hours using pyCharm
+
 Kobok Adventures is a text-based adventure game where you play as a goblin named Kobok, striving to survive in a human town. Make strategic choices to gather enough food and survive each day. Explore, sleep, or take risks to manage your time and resources wisely.
 
 Features
@@ -36,8 +40,8 @@ Choose wisely to maximize survival.
 Game Rules
 Each game day starts at 10 AM and ends at midnight.
 Manage your time (hours) and food carefully:
-Sleep costs 3 hours and 1 food.
-Explore costs 1 hour and may affect food levels positively or negatively.
+Sleep spends 3 hours and costs 1 food.
+Explore spends 1 hour and may affect food levels positively or negatively.
 If you have less than 3 food at the end of the day, the game ends.
 Game Flow
 Introduction: The game introduces Kobok and the survival challenge.
