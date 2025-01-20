@@ -1,93 +1,69 @@
-# TAG-BROSSIER-CDOF3
-Welcome to my open source project !
-
-This repository is a small school project done in 3 hours in python using pyCharm.
-
-Kobok Adventures is a text-based adventure game where you play as a little goblin named Kobok trying to survive in a human town. Every decision you make matters, and your survival depends on your ability to gather enough food to last the night.
+Kobok Adventures is a text-based adventure game where you play as a goblin named Kobok, striving to survive in a human town. Make strategic choices to gather enough food and survive each day. Explore, sleep, or take risks to manage your time and resources wisely.
 
 Features
-Interactive Gameplay: Choose from multiple options to influence the story and progress.
-Random Events: Each day, experience unique random events that challenge your survival skills.
-Time Management: Balance exploration and rest to make the most of your day.
-Replayability: Each playthrough offers new challenges with randomized events.
+Dynamic day-night cycle starting at 10 AM and ending at midnight.
+A variety of randomized events with consequences for your food levels.
+Multiple choices at each step that affect the gameplay.
+Simple text-based interface.
+File Structure
+main.py:
+The main entry point of the game, handles game flow, introduction, and day progression.
+
+utils.py:
+
+Contains utility functions for managing the game state (time, food, days).
+Defines the list of randomized events.
+Provides helper functions like exitgame, givetime, and givefood.
+TAG.py:
+
+Defines 12 unique randomized events triggered during exploration.
+Each event affects food levels positively or negatively based on the player's choices.
 How to Play
-Clone the repository to your local machine:
-bash
-Copier
-Modifier
-git clone https://github.com/lelandre/kobok-adventures.git
-Navigate to the project folder:
-bash
-Copier
-Modifier
-cd kobok-adventures
-Run the game using Python:
+Run main.py to start the game.
+Follow the on-screen instructions to make choices:
+Type [kobok] to begin a new game.
+Type [quit] to exit the game.
+During the game:
+Choose [sleep] to rest for 3 hours at the cost of 1 food.
+Choose [explore] to trigger a random event, potentially gaining or losing food.
+Survive until the end of the day by having at least 3 food.
+At the end of the day, decide to continue surviving another day or quit the game.
+Random Events
+Events are defined in TAG.py. Each event offers unique scenarios where the player can:
+Gain food (e.g., stealing bread, finding berries).
+Lose food (e.g., being caught by humans, drinking poisoned water).
+Choose wisely to maximize survival.
+Game Rules
+Each game day starts at 10 AM and ends at midnight.
+Manage your time (hours) and food carefully:
+Sleep costs 3 hours and 1 food.
+Explore costs 1 hour and may affect food levels positively or negatively.
+If you have less than 3 food at the end of the day, the game ends.
+Game Flow
+Introduction: The game introduces Kobok and the survival challenge.
+Gameplay:
+Choose actions (sleep or explore) until the day ends.
+Random events occur during exploration.
+End of Day:
+If food is ≥ 3, proceed to the next day.
+If food is < 3, the game ends.
+Game Over: Decide to restart or quit.
+Installation & Execution
+Clone the repository or download the project files.
+Ensure Python 3.6+ is installed.
+Run the game:
 bash
 Copier
 Modifier
 python main.py
-Gameplay Mechanics
-Daily Routine:
-Kobok wakes up at 10 AM and must survive until 12 AM. You need at least 3 units of food to survive the night.
+Dependencies
+Python Standard Library:
+random for event randomization.
+input for user interaction.
+Contribution
+Contributions are welcome! To add new events:
 
-Commands:
-
-sleep: Skip time and consume 1 food.
-explore: Trigger a random event, which may result in gaining or losing food.
-Random Events:
-Events include encountering wild animals, finding food, or facing dangerous situations. Choose wisely!
-
-End of the Day:
-
-If Kobok has at least 3 food, the day ends successfully, and you can choose to play another day.
-If not, the game ends with Kobok starving.
-File Structure
-main.py:
-The main game logic, including the introduction, game loop, and daily mechanics.
-
-utils.py:
-Contains utility functions such as time tracking, food management, and game-ending sequences.
-
-TAG.py:
-Defines all random events that occur during the game. Each event includes a description, choices, and outcomes.
-
-Example of Random Events
-The River:
-You find a sparkling river. Do you drink the water? It might be poisoned...
-
-[Yes] Risk gaining food or losing it due to poisoning.
-[No] Safely avoid the risk but gain nothing.
-The Merchant:
-A human merchant offers food in exchange for a shiny pebble.
-
-[Yes] Gain 2 food.
-[No] The merchant leaves, and you get nothing.
-Planned Features
-Add more complex events with branching paths.
-Introduce a health system for additional survival mechanics.
-Implement an inventory system to store items and resources.
-Contributing
-Contributions are welcome!
-
-Fork the repository.
-Create a feature branch:
-bash
-Copier
-Modifier
-git checkout -b feature-name
-Commit your changes:
-bash
-Copier
-Modifier
-git commit -m "Add a brief description of your changes"
-Push to the branch:
-bash
-Copier
-Modifier
-git push origin feature-name
-Open a pull request.
+Define the event function in TAG.py following the format of existing events.
+Append the new event to the events list in utils.py.
 License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-
-This project is licensed under the MIT license
+This project is licensed under the MIT License.
